@@ -3,6 +3,7 @@ import { consultation_button, skull_group } from './dom.js';
 import { select_random_items } from './random_selection.js';
 import { apply_spell } from './spell_cards.js';
 import { animate_skulls, apply_aspect } from './skull_animation.js';
+import { save_consultation } from './consultation_storage.js';
 
 export function stop_anticipation(event) {
     if (event.pointerId !== app_state.active_pointer) {
@@ -52,6 +53,8 @@ export function begin_consultation() {
         ...selected_cantrips,
         ...selected_rituals
     ];
+
+    save_consultation(selected_aspects, selected_spells);
 
     const cards = Array.from(
         document.querySelectorAll(".spell_card")

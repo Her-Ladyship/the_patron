@@ -1,5 +1,5 @@
 
-const cache_name = "the_patron_v1";
+const cache_name = "the_patron_v2";
 
 const core_files = [
     "./",

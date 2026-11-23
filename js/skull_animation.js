@@ -135,6 +135,8 @@ export function create_skull(index) {
 export function apply_aspect(index, aspect) {
     const skull = document.getElementById(`skull_${index}`);
 
+    skull.dataset.aspectId = aspect.id;
+
     const sigil_shape = document.getElementById(
         `sigil_shape_${index}`
     );
