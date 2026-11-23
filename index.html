@@ -449,6 +449,20 @@
 
     <script type="module" src="js/app.js"></script>
 
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker.register("./service_worker.js")
+                    .then(() => {
+                        console.log("The Patron: service worker registered.");
+                    })
+                    .catch((error) => {
+                        console.error("Service worker registration failed:", error);
+                    });
+            });
+        }
+    </script>
+
 </body>
 
 </html>
