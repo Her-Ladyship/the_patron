@@ -39,8 +39,7 @@ const core_files = [
     "./assets/skulls/base_skull.png",
     "./assets/fonts/Cinzel-VariableFont_wght.ttf",
 
-    "./assets/apple_touch_icon.png",
-    "./assets/patron_icon_512.png"
+    "./assets/apple_touch_icon.png"
 ];
 
 
