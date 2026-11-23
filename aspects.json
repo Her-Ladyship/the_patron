@@ -1,0 +1,123 @@
+
+[
+    {
+        "id": "anger",
+        "name": "Anger",
+        "symbol": "anger.svg",
+        "colour": "#F23838",
+        "brand_colour": "#8B2020",
+        "energy_colour": "#FF4938",
+        "core_colour": "#FFD3AA",
+        "sigil_path": "M20 18 L50 45 L80 18 M50 45 V82 M27 62 L50 39 L73 62"
+    },
+    {
+        "id": "apathy",
+        "name": "Apathy",
+        "symbol": "apathy.svg",
+        "colour": "#646B7C",
+        "brand_colour": "#30343F",
+        "energy_colour": "#929BAC",
+        "core_colour": "#D5DCE5",
+        "sigil_path": "M25 25 H75 V75 H25 Z M40 50 H60"
+    },
+    {
+        "id": "desire",
+        "name": "Desire",
+        "symbol": "desire.svg",
+        "colour": "#F044B5",
+        "brand_colour": "#8B2066",
+        "energy_colour": "#FF65CB",
+        "core_colour": "#FFD0EC",
+        "sigil_path": "M22 20 H73 V45 H45 V80 M22 44 V63 H45 M45 80 L76 60"
+    },
+    {
+        "id": "disgust",
+        "name": "Disgust",
+        "symbol": "disgust.svg",
+        "colour": "#B7CE38",
+        "brand_colour": "#596619",
+        "energy_colour": "#D0EC45",
+        "core_colour": "#F4FFAE",
+        "sigil_path": "M20 22 H60 L40 48 H80 M40 48 V80"
+    },
+    {
+        "id": "envy",
+        "name": "Envy",
+        "symbol": "envy.svg",
+        "colour": "#24C66B",
+        "brand_colour": "#13683A",
+        "energy_colour": "#43EE89",
+        "core_colour": "#BAFFCD",
+        "sigil_path": "M23 20 V80 M23 20 H50 V52 H23 M50 32 H77 V80 H50 V62"
+    },
+    {
+        "id": "fear",
+        "name": "Fear",
+        "symbol": "fear.svg",
+        "colour": "#9254EF",
+        "brand_colour": "#4D248A",
+        "energy_colour": "#B279FF",
+        "core_colour": "#E5CCFF",
+        "sigil_path": "M25 20 H75 L50 45 L75 80 M50 45 L25 80 M25 20 V48"
+    },
+    {
+        "id": "hope",
+        "name": "Hope",
+        "symbol": "hope.svg",
+        "colour": "#70E9F4",
+        "brand_colour": "#286F80",
+        "energy_colour": "#8AF0FF",
+        "core_colour": "#E0FCFF",
+        "sigil_path": "M20 80 L50 50 L80 80 M50 50 V18 M25 18 V40 H75 V18"
+    },
+    {
+        "id": "joy",
+        "name": "Joy",
+        "symbol": "joy.svg",
+        "colour": "#FFDB45",
+        "brand_colour": "#967019",
+        "energy_colour": "#FFE76A",
+        "core_colour": "#FFF8CB",
+        "sigil_path": "M20 20 L50 40 L80 20 M20 80 L50 60 L80 80 M20 50 H80 M50 40 V60"
+    },
+    {
+        "id": "love",
+        "name": "Love",
+        "symbol": "love.svg",
+        "colour": "#FFA0B8",
+        "brand_colour": "#98465F",
+        "energy_colour": "#FFB8CC",
+        "core_colour": "#FFF0F5",
+        "sigil_path": "M20 20 V55 L50 80 L80 55 V20 M20 20 L50 45 L80 20 M50 45 V80"
+    },
+    {
+        "id": "pride",
+        "name": "Pride",
+        "symbol": "pride.svg",
+        "colour": "#FF932E",
+        "brand_colour": "#964719",
+        "energy_colour": "#FFAE50",
+        "core_colour": "#FFE4AE",
+        "sigil_path": "M50 18 V80 M20 80 H80 M25 60 V35 H75 V60 M25 60 H75"
+    },
+    {
+        "id": "shame",
+        "name": "Shame",
+        "symbol": "shame.svg",
+        "colour": "#C18159",
+        "brand_colour": "#70442D",
+        "energy_colour": "#E2A477",
+        "core_colour": "#F8DCC4",
+        "sigil_path": "M20 20 H80 M25 20 V55 L50 80 L75 55 V20 M50 35 V55"
+    },
+    {
+        "id": "sorrow",
+        "name": "Sorrow",
+        "symbol": "sorrow.svg",
+        "colour": "#397CED",
+        "brand_colour": "#1D438A",
+        "energy_colour": "#629BFF",
+        "core_colour": "#C5DFFF",
+        "sigil_path": "M20 18 V48 H50 V80 M80 18 V48 H65 M20 65 H35 M50 80 H80"
+    }
+]

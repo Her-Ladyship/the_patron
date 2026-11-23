@@ -1,0 +1,2763 @@
+[
+    {
+        "id": "ray_of_frost",
+        "name": "Ray of Frost",
+        "level": 0,
+        "school": "Evocation",
+        "source": "Player's Handbook (2024)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 60,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Make a ranged spell attack against the target. On a hit, the target takes {damage} Cold damage, and its Speed is reduced by 10 feet until the start of your next turn.",
+        "scaling": {
+            "damage": {
+                "1": "1d8",
+                "5": "2d8",
+                "11": "3d8",
+                "17": "4d8"
+            }
+        },
+        "visual_theme": "frost"
+    },
+    {
+        "id": "mage_hand",
+        "name": "Mage Hand",
+        "level": 0,
+        "school": "Conjuration",
+        "source": "Player's Handbook (2024)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 30,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": 1,
+            "unit": "minute"
+        },
+        "concentration": false,
+        "description": "A spectral hand appears at a point within range. You can use it to manipulate objects, open unlocked doors or containers, retrieve items from open containers, or pour out the contents of a vial. The hand cannot attack, activate magic items, or carry more than 10 pounds.",
+        "scaling": {},
+        "visual_theme": "spirit"
+    },
+    {
+        "id": "mending",
+        "name": "Mending",
+        "level": 0,
+        "school": "Transmutation",
+        "source": "Player's Handbook (2024)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "minute"
+        },
+        "range": {
+            "amount": null,
+            "unit": "touch"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": true,
+            "materials": "Two lodestones",
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Repair a single break or tear in an object you touch, provided the damage is no larger than 1 foot in any dimension. The repair leaves no trace of the damage. The spell can physically repair a magic item but cannot restore its lost magic.",
+        "scaling": {},
+        "visual_theme": "arcane"
+    },
+    {
+        "id": "minor_illusion",
+        "name": "Minor Illusion",
+        "level": 0,
+        "school": "Illusion",
+        "source": "Player's Handbook (2024)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 30,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": false,
+            "somatic": true,
+            "material": true,
+            "materials": "A bit of fleece",
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": 1,
+            "unit": "minute"
+        },
+        "concentration": false,
+        "description": "Create either a sound or an image of an object within range. The illusion lasts for 1 minute, but ends early if you cast Minor Illusion again.\n\nSound: Create any sound, ranging in volume from a whisper to a scream. It could be your voice, another person's voice, an animal's cry, musical instruments, or something else entirely. The sound can continue uninterrupted for the duration, or you can produce separate sounds at different times.\n\nImage: Create the image of an object, such as a chair, muddy footprints, or a small chest, fitting within a 5-foot cube. The image cannot produce sound, light, smell, or any other sensory effects. Objects and creatures can pass through it, revealing its illusory nature.\n\nDetecting the Illusion: A creature can take the Study action to examine the sound or image, making an Intelligence (Investigation) check against your spell save DC. On a success, it recognises the illusion, which becomes faint to that creature.",
+        "scaling": {},
+        "visual_theme": "illusion"
+    },
+    {
+        "id": "comprehend_languages",
+        "name": "Comprehend Languages",
+        "level": 1,
+        "school": "Divination",
+        "source": "Player's Handbook (2024)",
+        "ritual": true,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": null,
+            "unit": "self"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": true,
+            "materials": "A pinch of soot and salt",
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": 1,
+            "unit": "hour"
+        },
+        "concentration": false,
+        "description": "For the duration, you understand the literal meaning of any language you hear spoken or see signed. You also understand written languages, provided you touch the surface on which the words are written. It takes approximately 1 minute to read one page of text.\n\nThe spell does not allow you to speak or write unfamiliar languages, and it cannot decode symbols or secret messages.",
+        "scaling": {},
+        "visual_theme": "runes"
+    },
+    {
+        "id": "speak_with_animals",
+        "name": "Speak with Animals",
+        "level": 1,
+        "school": "Divination",
+        "source": "Player's Handbook (2024)",
+        "ritual": true,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": null,
+            "unit": "self"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": 10,
+            "unit": "minute"
+        },
+        "concentration": false,
+        "description": "For the duration, you can understand and verbally communicate with Beasts. You can use any of the Influence action's skill options when interacting with them.\n\nMost Beasts are primarily concerned with survival and companionship, so their knowledge of other subjects may be limited. However, they can provide information about nearby locations and monsters, including things they've perceived within the past day.",
+        "scaling": {},
+        "visual_theme": "nature"
+    },
+    {
+        "id": "find_familiar",
+        "name": "Find Familiar",
+        "level": 1,
+        "school": "Conjuration",
+        "source": "Player's Handbook (2024)",
+        "ritual": true,
+        "casting_time": {
+            "amount": 1,
+            "unit": "hour"
+        },
+        "range": {
+            "amount": 10,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": true,
+            "materials": "Burning incense worth at least 10GP",
+            "material_cost_gp": 10,
+            "material_consumed": true
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Summon a spirit in the form of a Bat, Cat, Frog, Hawk, Lizard, Octopus, Owl, Rat, Raven, Spider, Weasel, or another Beast with a Challenge Rating of 0. It appears in an unoccupied space within range, uses that creature's statistics, and is a Celestial, Fey, or Fiend (your choice) rather than a Beast. It acts independently but obeys your commands.\n\nTelepathic Connection: You can communicate telepathically with your familiar within 100 feet. As a Bonus Action, you can see and hear through its senses until the start of your next turn, including any special senses it possesses. Your familiar can also deliver your Touch spells while within 100 feet, using its Reaction when you cast the spell.\n\nCombat: Your familiar is an ally, rolls its own Initiative, and takes its own turn. It cannot attack but can take other actions normally.\n\nDismissal: As a Magic action, you can temporarily dismiss your familiar into a pocket dimension or dismiss it permanently. While temporarily dismissed, you can use a Magic action to return it to an unoccupied space within 30 feet. Anything it was wearing or carrying is left behind when it enters the pocket dimension.\n\nDefeat: If reduced to 0 Hit Points, the familiar disappears, leaving behind anything it was wearing or carrying. You must cast Find Familiar again to restore it.\n\nOne Familiar: You can have only one familiar at a time. Casting this spell while you already have one changes its form to another eligible creature.",
+        "scaling": {},
+        "visual_theme": "spirit"
+    },
+    {
+        "id": "acid_splash",
+        "name": "Acid Splash",
+        "level": 0,
+        "school": "Evocation",
+        "source": "Player's Handbook (2024)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 60,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Create a bubble of acid at a point within range. Each creature in a 5-foot-radius sphere centred on that point must succeed on a Dexterity saving throw or take {damage} Acid damage.",
+        "scaling": {
+            "damage": {
+                "1": "1d6",
+                "5": "2d6",
+                "11": "3d6",
+                "17": "4d6"
+            }
+        },
+        "visual_theme": "corrosion"
+    },
+    {
+        "id": "blade_ward",
+        "name": "Blade Ward",
+        "level": 0,
+        "school": "Abjuration",
+        "source": "Player's Handbook (2024)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": null,
+            "unit": "self"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": 1,
+            "unit": "minute"
+        },
+        "concentration": true,
+        "description": "Until the spell ends, whenever a creature makes an attack roll against you, the creature subtracts 1d4 from the attack roll.",
+        "scaling": {},
+        "visual_theme": "warding"
+    },
+    {
+        "id": "chill_touch",
+        "name": "Chill Touch",
+        "level": 0,
+        "school": "Necromancy",
+        "source": "Player's Handbook (2024)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": null,
+            "unit": "touch"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Make a melee spell attack against the target. On a hit, the target takes {damage} Necrotic damage and cannot regain Hit Points until the end of your next turn.",
+        "scaling": {
+            "damage": {
+                "1": "1d10",
+                "5": "2d10",
+                "11": "3d10",
+                "17": "4d10"
+            }
+        },
+        "visual_theme": "necrotic"
+    },
+    {
+        "id": "dancing_lights",
+        "name": "Dancing Lights",
+        "level": 0,
+        "school": "Illusion",
+        "source": "Player's Handbook (2024)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 120,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": true,
+            "materials": "A bit of phosphorus",
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": 1,
+            "unit": "minute"
+        },
+        "concentration": true,
+        "description": "Create up to four floating lights within range, each shedding Dim Light in a 10-foot radius. Alternatively, combine the four lights into a vaguely humanoid Medium form. As a Bonus Action, you can move the lights up to 60 feet to a point within range. Each separate light must remain within 20 feet of another light created by this spell, and a light disappears if it exceeds the spell's range.",
+        "scaling": {},
+        "visual_theme": "radiance"
+    },
+    {
+        "id": "druidcraft",
+        "name": "Druidcraft",
+        "level": 0,
+        "school": "Transmutation",
+        "source": "Player's Handbook (2024)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 30,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Whisper to the spirits of nature to produce one of the following effects within range:\n\nWeather Sensor: Create a Tiny, harmless sensory effect predicting the weather at your location for the next 24 hours. For example, a golden orb might indicate clear skies, a cloud might indicate rain, or falling snowflakes might indicate snow. The effect lasts for 1 round.\n\nBloom: Instantly make a flower blossom, a seed pod open, or a leaf bud bloom.\n\nSensory Effect: Create a harmless sensory effect, such as falling leaves, spectral dancing fairies, a gentle breeze, the sound of an animal, or the faint odour of a skunk. The effect must fit within a 5-foot cube.\n\nFire Play: Instantly light or snuff out a candle, torch, or campfire.",
+        "scaling": {},
+        "visual_theme": "nature"
+    },
+    {
+        "id": "eldritch_blast",
+        "name": "Eldritch Blast",
+        "level": 0,
+        "school": "Evocation",
+        "source": "Player's Handbook (2024)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 120,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Launch {beams} beam(s) of magical energy at creatures or objects within range. Make a separate ranged spell attack for each beam. On a hit, the target takes 1d10 Force damage. You can direct the beams at the same target or at different targets.",
+        "scaling": {
+            "beams": {
+                "1": "1",
+                "5": "2",
+                "11": "3",
+                "17": "4"
+            }
+        },
+        "visual_theme": "eldritch"
+    },
+    {
+        "id": "elementalism",
+        "name": "Elementalism",
+        "level": 0,
+        "school": "Transmutation",
+        "source": "Player's Handbook (2024)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 30,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Manipulate the elements to produce one of the following effects within range:\n\nBeckon Air: Create a breeze strong enough to disturb dust, leaves and fabric, or close unsecured doors and shutters, within a 5-foot cube.\n\nBeckon Earth: Create a thin covering of dust or sand over a 5-foot-square area, or make a single word appear in your handwriting in loose earth.\n\nBeckon Fire: Create harmless embers and coloured, scented smoke within a 5-foot cube. The smoke persists for 1 minute. The embers can ignite candles, torches or lamps.\n\nBeckon Water: Create a cool mist that lightly dampens creatures and objects within a 5-foot cube, or create one cup of clean water in an open container. The water evaporates after 1 minute.\n\nSculpt Element: Shape dirt, sand, fire, smoke, mist or water that fits within a 1-foot cube into a crude form for 1 hour.",
+        "scaling": {},
+        "visual_theme": "arcane"
+    },
+    {
+        "id": "fire_bolt",
+        "name": "Fire Bolt",
+        "level": 0,
+        "school": "Evocation",
+        "source": "Player's Handbook (2024)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 120,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes {damage} Fire damage. A flammable object hit by this spell starts burning if it isn't being worn or carried.",
+        "scaling": {
+            "damage": {
+                "1": "1d10",
+                "5": "2d10",
+                "11": "3d10",
+                "17": "4d10"
+            }
+        },
+        "visual_theme": "flame"
+    },
+    {
+        "id": "friends",
+        "name": "Friends",
+        "level": 0,
+        "school": "Enchantment",
+        "source": "Player's Handbook (2024)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 10,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": false,
+            "somatic": true,
+            "material": true,
+            "materials": "Some makeup",
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": 1,
+            "unit": "minute"
+        },
+        "concentration": true,
+        "description": "Choose one creature you can see within range. The target must succeed on a Wisdom saving throw or have the Charmed condition for the duration.\n\nThe target automatically succeeds if it isn't a Humanoid, if you're fighting it, or if you've cast this spell on it within the past 24 hours.\n\nThe spell ends early if the target takes damage or if you make an attack roll, deal damage, or force anyone to make a saving throw. When the spell ends, the target knows it was Charmed by you.",
+        "scaling": {},
+        "visual_theme": "illusion"
+    },
+    {
+        "id": "guidance",
+        "name": "Guidance",
+        "level": 0,
+        "school": "Divination",
+        "source": "Player's Handbook (2024)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": null,
+            "unit": "touch"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": 1,
+            "unit": "minute"
+        },
+        "concentration": true,
+        "description": "Touch a willing creature and choose a skill. Until the spell ends, the creature adds 1d4 to any ability check it makes using the chosen skill.",
+        "scaling": {},
+        "visual_theme": "runes"
+    },
+    {
+        "id": "light",
+        "name": "Light",
+        "level": 0,
+        "school": "Evocation",
+        "source": "Player's Handbook (2024)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": null,
+            "unit": "touch"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": false,
+            "material": true,
+            "materials": "A firefly or phosphorescent moss",
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": 1,
+            "unit": "hour"
+        },
+        "concentration": false,
+        "description": "Touch one Large or smaller object that isn't being worn or carried by another creature. For the duration, the object sheds Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. You choose the light's colour.\n\nCompletely covering the object with something opaque blocks the light. The spell ends if you cast it again.\n\nIf you target an object worn or carried by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell.",
+        "scaling": {},
+        "visual_theme": "radiance"
+    },
+    {
+        "id": "message",
+        "name": "Message",
+        "level": 0,
+        "school": "Transmutation",
+        "source": "Player's Handbook (2024)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 120,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": false,
+            "somatic": true,
+            "material": true,
+            "materials": "A copper wire",
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": 1,
+            "unit": "round"
+        },
+        "concentration": false,
+        "description": "Point towards a creature within range and whisper a message. Only the target hears it, and it can whisper a reply that only you hear.\n\nYou can send the message through solid objects, but the spell is blocked by magical silence, 1 foot of stone, metal, or wood, or a thin sheet of lead. You don't need to see the target if you know it and know its direction.",
+        "scaling": {},
+        "visual_theme": "psychic"
+    },
+    {
+        "id": "mind_sliver",
+        "name": "Mind Sliver",
+        "level": 0,
+        "school": "Enchantment",
+        "source": "Player's Handbook (2024)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 60,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": false,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Choose one creature you can see within range. The target must succeed on an Intelligence saving throw or take {damage} Psychic damage and subtract 1d4 from the next saving throw it makes before the end of your next turn.",
+        "scaling": {
+            "damage": {
+                "1": "1d6",
+                "5": "2d6",
+                "11": "3d6",
+                "17": "4d6"
+            }
+        },
+        "visual_theme": "psychic"
+    },
+    {
+        "id": "poison_spray",
+        "name": "Poison Spray",
+        "level": 0,
+        "school": "Necromancy",
+        "source": "Player's Handbook (2024)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 30,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Spray toxic mist at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes {damage} Poison damage.",
+        "scaling": {
+            "damage": {
+                "1": "1d12",
+                "5": "2d12",
+                "11": "3d12",
+                "17": "4d12"
+            }
+        },
+        "visual_theme": "corrosion"
+    },
+    {
+        "id": "prestidigitation",
+        "name": "Presti- digitation",
+        "level": 0,
+        "school": "Transmutation",
+        "source": "Player's Handbook (2024)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 10,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": 1,
+            "unit": "hour"
+        },
+        "concentration": false,
+        "description": "Perform one of the following minor magical tricks within range:\n\nSensory Effect: Create an instantaneous, harmless sensory effect, such as sparks, a puff of wind, faint musical notes, or an unusual odour.\n\nFire Play: Instantly light or extinguish a candle, torch, or small campfire.\n\nClean or Soil: Instantly clean or dirty an object no larger than 1 cubic foot.\n\nMinor Sensation: Chill, warm, or flavour up to 1 cubic foot of nonliving material for 1 hour.\n\nMagic Mark: Make a colour, small mark, or symbol appear on an object or surface for 1 hour.\n\nMinor Creation: Create a nonmagical trinket or illusory image that fits in your hand. It lasts until the end of your next turn and cannot deal damage or have monetary value.\n\nYou can have up to three of the spell's non-instantaneous effects active simultaneously.",
+        "scaling": {},
+        "visual_theme": "arcane"
+    },
+    {
+        "id": "produce_flame",
+        "name": "Produce Flame",
+        "level": 0,
+        "school": "Conjuration",
+        "source": "Player's Handbook (2024)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "bonus_action"
+        },
+        "range": {
+            "amount": null,
+            "unit": "self"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": 10,
+            "unit": "minute"
+        },
+        "concentration": false,
+        "description": "A flickering flame appears in your hand for the duration. It doesn't harm you or your equipment and sheds Bright Light in a 20-foot radius and Dim Light for another 20 feet.\n\nAs a Magic action, you can hurl the flame at a creature or object within 60 feet, ending the spell. Make a ranged spell attack. On a hit, the target takes {damage} Fire damage.\n\nYou can dismiss the flame as a Bonus Action.",
+        "scaling": {
+            "damage": {
+                "1": "1d8",
+                "5": "2d8",
+                "11": "3d8",
+                "17": "4d8"
+            }
+        },
+        "visual_theme": "flame"
+    },
+    {
+        "id": "resistance",
+        "name": "Resistance",
+        "level": 0,
+        "school": "Abjuration",
+        "source": "Player's Handbook (2024)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": null,
+            "unit": "touch"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": true,
+            "materials": "A miniature cloak",
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": 1,
+            "unit": "minute"
+        },
+        "concentration": true,
+        "description": "Touch a willing creature and choose one damage type: Acid, Bludgeoning, Cold, Fire, Lightning, Necrotic, Piercing, Poison, Radiant, Slashing, or Thunder.\n\nUntil the spell ends, whenever the target takes damage of the chosen type, it reduces that damage by 1d4.",
+        "scaling": {},
+        "visual_theme": "warding"
+    },
+    {
+        "id": "sacred_flame",
+        "name": "Sacred Flame",
+        "level": 0,
+        "school": "Evocation",
+        "source": "Player's Handbook (2024)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 60,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Flame-like radiance descends upon a creature you can see within range. The target must succeed on a Dexterity saving throw or take {damage} Radiant damage. The target gains no benefit from Half Cover or Three-Quarters Cover against this saving throw.",
+        "scaling": {
+            "damage": {
+                "1": "1d8",
+                "5": "2d8",
+                "11": "3d8",
+                "17": "4d8"
+            }
+        },
+        "visual_theme": "radiance"
+    },
+    {
+        "id": "shillelagh",
+        "name": "Shillelagh",
+        "level": 0,
+        "school": "Transmutation",
+        "source": "Player's Handbook (2024)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "bonus_action"
+        },
+        "range": {
+            "amount": null,
+            "unit": "self"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": true,
+            "materials": "Mistletoe",
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": 1,
+            "unit": "minute"
+        },
+        "concentration": false,
+        "description": "A Club or Quarterstaff you are holding becomes imbued with nature's power for the duration. You can use your spellcasting ability instead of Strength for the weapon's attack and damage rolls.\n\nThe weapon's damage die becomes {damage}, and you can choose whether it deals Force damage or its normal damage type.\n\nThe spell ends early if you cast it again or let go of the weapon.",
+        "scaling": {
+            "damage": {
+                "1": "1d8",
+                "5": "1d10",
+                "11": "1d12",
+                "17": "2d6"
+            }
+        },
+        "visual_theme": "nature"
+    },
+    {
+        "id": "shocking_grasp",
+        "name": "Shocking Grasp",
+        "level": 0,
+        "school": "Evocation",
+        "source": "Player's Handbook (2024)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": null,
+            "unit": "touch"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Lightning springs from your hand towards a creature you try to touch. Make a melee spell attack against the target. On a hit, the target takes {damage} Lightning damage and can't make Opportunity Attacks until the start of its next turn.",
+        "scaling": {
+            "damage": {
+                "1": "1d8",
+                "5": "2d8",
+                "11": "3d8",
+                "17": "4d8"
+            }
+        },
+        "visual_theme": "storm"
+    },
+    {
+        "id": "sorcerous_burst",
+        "name": "Sorcerous Burst",
+        "level": 0,
+        "school": "Evocation",
+        "source": "Player's Handbook (2024)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 120,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Hurl a burst of magical energy at a creature or object within range. Choose Acid, Cold, Fire, Lightning, Poison, Psychic, or Thunder damage, then make a ranged spell attack. On a hit, the target takes {damage} damage of the chosen type.\n\nIf you roll an 8 on a d8 for this spell's damage, you can roll another d8 and add it to the damage. Additional dice can also trigger this effect. The maximum number of additional dice equals your spellcasting ability modifier.",
+        "scaling": {
+            "damage": {
+                "1": "1d8",
+                "5": "2d8",
+                "11": "3d8",
+                "17": "4d8"
+            }
+        },
+        "visual_theme": "arcane"
+    },
+    {
+        "id": "spare_the_dying",
+        "name": "Spare the Dying",
+        "level": 0,
+        "school": "Necromancy",
+        "source": "Player's Handbook (2024)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 15,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Choose a creature within range that has 0 Hit Points and isn't dead. The creature becomes Stable, meaning it no longer needs to make Death Saving Throws, but remains unconscious at 0 Hit Points until it regains Hit Points.\n\nThe spell's range increases as you gain levels: 30 feet at level 5, 60 feet at level 11, and 120 feet at level 17.",
+        "scaling": {},
+        "visual_theme": "necrotic"
+    },
+    {
+        "id": "starry_wisp",
+        "name": "Starry Wisp",
+        "level": 0,
+        "school": "Evocation",
+        "source": "The Book of Many Things (2023)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 60,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Launch a mote of light at a creature or object within range. Make a ranged spell attack against the target. On a hit, it takes {damage} Radiant damage and emits Dim Light in a 10-foot radius until the end of your next turn. During that time, the target can't benefit from the Invisible condition.",
+        "scaling": {
+            "damage": {
+                "1": "1d8",
+                "5": "2d8",
+                "11": "3d8",
+                "17": "4d8"
+            }
+        },
+        "visual_theme": "radiance"
+    },
+    {
+        "id": "thaumaturgy",
+        "name": "Thaumaturgy",
+        "level": 0,
+        "school": "Transmutation",
+        "source": "Player's Handbook (2024)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 30,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": false,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": 1,
+            "unit": "minute"
+        },
+        "concentration": false,
+        "description": "Manifest a minor supernatural wonder within range, choosing one of the following effects:\n\nAltered Eyes: Change the appearance of your eyes for 1 minute.\n\nBooming Voice: Make your voice up to three times as loud for 1 minute.\n\nFire Play: Cause flames to flicker, brighten, dim, or change colour for 1 minute.\n\nInvisible Hand: Instantly cause an unlocked door or window to fly open or slam shut.\n\nPhantom Sound: Create an instantaneous sound originating from a point within range, such as thunder, a raven's cry, or ominous whispers.\n\nTremors: Cause harmless tremors in the ground for 1 minute.\n\nYou can have up to three of the spell's 1-minute effects active simultaneously.",
+        "scaling": {},
+        "visual_theme": "arcane"
+    },
+    {
+        "id": "thorn_whip",
+        "name": "Thorn Whip",
+        "level": 0,
+        "school": "Transmutation",
+        "source": "Player's Handbook (2024)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 30,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": true,
+            "materials": "The stem of a plant with thorns",
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Create a long, vine-like whip covered in thorns that lashes towards a creature within range. Make a melee spell attack against the target. On a hit, it takes {damage} Piercing damage, and you can pull it up to 10 feet closer to you.",
+        "scaling": {
+            "damage": {
+                "1": "1d6",
+                "5": "2d6",
+                "11": "3d6",
+                "17": "4d6"
+            }
+        },
+        "visual_theme": "nature"
+    },
+    {
+        "id": "thunderclap",
+        "name": "Thunderclap",
+        "level": 0,
+        "school": "Evocation",
+        "source": "Xanathar's Guide to Everything (2017)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": null,
+            "unit": "self"
+        },
+        "components": {
+            "verbal": false,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Create a burst of thunderous sound audible up to 100 feet away. Each creature other than you within 5 feet must make a Constitution saving throw, taking {damage} Thunder damage on a failed save. A creature takes no damage on a successful save.",
+        "scaling": {
+            "damage": {
+                "1": "1d6",
+                "5": "2d6",
+                "11": "3d6",
+                "17": "4d6"
+            }
+        },
+        "visual_theme": "storm"
+    },
+    {
+        "id": "toll_the_dead",
+        "name": "Toll the Dead",
+        "level": 0,
+        "school": "Necromancy",
+        "source": "Player's Handbook (2024)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 60,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "The sound of a dolorous bell fills the air around a creature you can see within range. The target must make a Wisdom saving throw, taking {damage} Necrotic damage on a failed save, or no damage on a successful one.\n\nIf the target is missing any Hit Points, the spell uses d12s instead of d8s for its damage dice.",
+        "scaling": {
+            "damage": {
+                "1": "1d8",
+                "5": "2d8",
+                "11": "3d8",
+                "17": "4d8"
+            }
+        },
+        "visual_theme": "necrotic"
+    },
+    {
+        "id": "true_strike",
+        "name": "True Strike",
+        "level": 0,
+        "school": "Divination",
+        "source": "Player's Handbook (2024)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": null,
+            "unit": "self"
+        },
+        "components": {
+            "verbal": false,
+            "somatic": true,
+            "material": true,
+            "materials": "A weapon with which you have proficiency and that is worth 1 CP or more",
+            "material_cost_gp": 0.01,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Guided by a flash of magical insight, make one attack with the weapon used in the spell's casting. You can use your spellcasting ability modifier instead of Strength or Dexterity for the attack and damage rolls. You can also choose to deal Radiant damage instead of the weapon's normal damage type.\n\nAt higher levels, the attack deals additional Radiant damage on a hit: 1d6 at level 5, 2d6 at level 11, and 3d6 at level 17.",
+        "scaling": {},
+        "visual_theme": "radiance"
+    },
+    {
+        "id": "vicious_mockery",
+        "name": "Vicious Mockery",
+        "level": 0,
+        "school": "Enchantment",
+        "source": "Player's Handbook (2024)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 60,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": false,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Unleash a string of magically infused insults at a creature you can see or hear within range. The target must be able to hear you but needn't understand your language.\n\nThe target must succeed on a Wisdom saving throw or take {damage} Psychic damage and have Disadvantage on the next attack roll it makes before the end of its next turn.",
+        "scaling": {
+            "damage": {
+                "1": "1d6",
+                "5": "2d6",
+                "11": "3d6",
+                "17": "4d6"
+            }
+        },
+        "visual_theme": "psychic"
+    },
+    {
+        "id": "word_of_radiance",
+        "name": "Word of Radiance",
+        "level": 0,
+        "school": "Evocation",
+        "source": "Player's Handbook (2024)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": null,
+            "unit": "self"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": false,
+            "material": true,
+            "materials": "A sunburst token",
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Burning radiance erupts from you. Each creature of your choice within a 5-foot Emanation originating from you must make a Constitution saving throw, taking {damage} Radiant damage on a failed save or no damage on a successful one.",
+        "scaling": {
+            "damage": {
+                "1": "1d6",
+                "5": "2d6",
+                "11": "3d6",
+                "17": "4d6"
+            }
+        },
+        "visual_theme": "radiance"
+    },
+    {
+        "id": "booming_blade",
+        "name": "Booming Blade",
+        "level": 0,
+        "school": "Evocation",
+        "source": "Tasha's Cauldron of Everything (2020)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": null,
+            "unit": "self"
+        },
+        "components": {
+            "verbal": false,
+            "somatic": true,
+            "material": true,
+            "materials": "A melee weapon worth at least 1 SP",
+            "material_cost_gp": 0.1,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": 1,
+            "unit": "round"
+        },
+        "concentration": false,
+        "description": "Brandish the weapon used to cast the spell and make a melee attack with it against one creature within 5 feet. On a hit, the target suffers the weapon attack's normal effects and becomes sheathed in booming energy until the start of your next turn.\n\nIf the target willingly moves 5 feet or more before then, it takes 1d8 Thunder damage and the spell ends.\n\nAt level 5, the initial attack deals an extra 1d8 Thunder damage and the movement damage increases to 2d8. At level 11, these increase to 2d8 and 3d8 respectively. At level 17, they increase to 3d8 and 4d8.",
+        "scaling": {},
+        "visual_theme": "storm"
+    },
+    {
+        "id": "control_flames",
+        "name": "Control Flames",
+        "level": 0,
+        "school": "Transmutation",
+        "source": "Xanathar's Guide to Everything (2017)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 60,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": false,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "special"
+        },
+        "concentration": false,
+        "description": "Choose a nonmagical flame you can see within range that fits within a 5-foot cube. You can instantly expand it 5 feet in one direction if fuel is available, extinguish it, alter the area of its illumination and its colour, or animate it into simple shapes and patterns.\n\nChanges to illumination, colour, and animation last for 1 hour. You can have up to three of these non-instantaneous effects active simultaneously.",
+        "scaling": {},
+        "visual_theme": "flame"
+    },
+    {
+        "id": "create_bonfire",
+        "name": "Create Bonfire",
+        "level": 0,
+        "school": "Conjuration",
+        "source": "Xanathar's Guide to Everything (2017)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 60,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": 1,
+            "unit": "minute"
+        },
+        "concentration": true,
+        "description": "Create a bonfire on ground you can see within range. The bonfire fills a 5-foot cube and lasts for the duration. A creature in the bonfire's space when you cast the spell must succeed on a Dexterity saving throw or take {damage} Fire damage.\n\nA creature must also make the saving throw when it enters the bonfire's space for the first time on a turn or ends its turn there. The bonfire ignites flammable objects in its area that aren't being worn or carried.",
+        "scaling": {
+            "damage": {
+                "1": "1d8",
+                "5": "2d8",
+                "11": "3d8",
+                "17": "4d8"
+            }
+        },
+        "visual_theme": "flame"
+    },
+    {
+        "id": "encode_thoughts",
+        "name": "Encode Thoughts",
+        "level": 0,
+        "school": "Enchantment",
+        "source": "Guildmasters' Guide to Ravnica (2018)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": null,
+            "unit": "self"
+        },
+        "components": {
+            "verbal": false,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": 8,
+            "unit": "hours"
+        },
+        "concentration": false,
+        "description": "Pull a memory, idea, or message from your mind and transform it into a tangible thought strand, which appears in an unoccupied space within 5 feet of you. You can also encode a thought detected using Detect Thoughts.\n\nThe strand lasts for 8 hours or until you cast this spell again. A creature holding the strand can cast Encode Thoughts to read its contents, receiving the information as though recalling it from its own memory. Creating a thought strand doesn't erase the thought from your mind.",
+        "scaling": {},
+        "visual_theme": "psychic"
+    },
+    {
+        "id": "frostbite",
+        "name": "Frostbite",
+        "level": 0,
+        "school": "Evocation",
+        "source": "Xanathar's Guide to Everything (2017)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 60,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Cause numbing frost to form on one creature you can see within range. The target must make a Constitution saving throw. On a failed save, it takes {damage} Cold damage and has Disadvantage on the next weapon attack roll it makes before the end of its next turn.\n\nOn a successful save, the creature takes no damage and suffers no additional effect.",
+        "scaling": {
+            "damage": {
+                "1": "1d6",
+                "5": "2d6",
+                "11": "3d6",
+                "17": "4d6"
+            }
+        },
+        "visual_theme": "frost"
+    },
+    {
+        "id": "green_flame_blade",
+        "name": "Green-Flame Blade",
+        "level": 0,
+        "school": "Evocation",
+        "source": "Tasha's Cauldron of Everything (2020)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": null,
+            "unit": "self"
+        },
+        "components": {
+            "verbal": false,
+            "somatic": true,
+            "material": true,
+            "materials": "A melee weapon worth at least 1 SP",
+            "material_cost_gp": 0.1,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Brandish the weapon used to cast the spell and make a melee attack with it against one creature within 5 feet. On a hit, the target suffers the weapon attack's normal effects, and you can cause green fire to leap to a different creature you can see within 5 feet of it. The second creature takes Fire damage equal to your spellcasting ability modifier.\n\nAt level 5, the initial attack deals an extra 1d8 Fire damage and the second creature takes 1d8 plus your spellcasting ability modifier. At level 11, these increase to 2d8 and 2d8 plus your modifier respectively. At level 17, they increase to 3d8 and 3d8 plus your modifier.",
+        "scaling": {},
+        "visual_theme": "nature"
+    },
+    {
+        "id": "gust",
+        "name": "Gust",
+        "level": 0,
+        "school": "Transmutation",
+        "source": "Xanathar's Guide to Everything (2017)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 30,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Seize the air and compel it to create one of three effects:\n\nPush a Creature: A Medium or smaller creature you choose must succeed on a Strength saving throw or be pushed up to 5 feet away from you.\n\nMove an Object: Push an unattended object weighing no more than 5 pounds up to 10 feet away from you. The object isn't pushed with enough force to cause damage.\n\nSensory Effect: Create a harmless effect using air, such as rustling leaves, blowing dust around, or making clothing ripple.",
+        "scaling": {},
+        "visual_theme": "air"
+    },
+    {
+        "id": "infestation",
+        "name": "Infestation",
+        "level": 0,
+        "school": "Conjuration",
+        "source": "Xanathar's Guide to Everything (2017)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 30,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": true,
+            "materials": "A living flea",
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Cause a cloud of mites, fleas, and other parasites to appear momentarily on one creature you can see within range. The target must make a Constitution saving throw. On a failed save, it takes {damage} Poison damage and moves 5 feet in a random direction if it can move and its speed is at least 5 feet.\n\nRoll a d4 to determine the direction: 1 north, 2 south, 3 east, or 4 west. This movement doesn't provoke Opportunity Attacks. If the direction is blocked, the target doesn't move. On a successful save, the creature takes no damage and doesn't move.",
+        "scaling": {
+            "damage": {
+                "1": "1d6",
+                "5": "2d6",
+                "11": "3d6",
+                "17": "4d6"
+            }
+        },
+        "visual_theme": "corrosion"
+    },
+    {
+        "id": "lightning_lure",
+        "name": "Lightning Lure",
+        "level": 0,
+        "school": "Evocation",
+        "source": "Tasha's Cauldron of Everything (2020)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": null,
+            "unit": "self"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": false,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Create a lash of lightning energy that strikes at one creature you can see within 15 feet. The target must succeed on a Strength saving throw or be pulled up to 10 feet in a straight line towards you.\n\nIf the target ends up within 5 feet of you, it takes {damage} Lightning damage. A creature that succeeds on the saving throw is neither pulled nor damaged.",
+        "scaling": {
+            "damage": {
+                "1": "1d8",
+                "5": "2d8",
+                "11": "3d8",
+                "17": "4d8"
+            }
+        },
+        "visual_theme": "storm"
+    },
+    {
+        "id": "magic_stone",
+        "name": "Magic Stone",
+        "level": 0,
+        "school": "Transmutation",
+        "source": "Xanathar's Guide to Everything (2017)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "bonus action"
+        },
+        "range": {
+            "amount": null,
+            "unit": "touch"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": 1,
+            "unit": "minute"
+        },
+        "concentration": false,
+        "description": "Touch one to three pebbles and imbue them with magic. You or another creature can make a ranged spell attack with one of the pebbles by throwing it or hurling it with a sling. A thrown pebble has a range of 60 feet.\n\nThe attacker uses your spell attack modifier for the attack roll. On a hit, the target takes 1d6 plus your spellcasting ability modifier Bludgeoning damage instead of the pebble's normal damage.\n\nThe magic ends on a stone when it hits or misses, after 1 minute, or when you cast this spell again.",
+        "scaling": {},
+        "visual_theme": "earth"
+    },
+    {
+        "id": "mold_earth",
+        "name": "Mold Earth",
+        "level": 0,
+        "school": "Transmutation",
+        "source": "Xanathar's Guide to Everything (2017)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 30,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": false,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "special"
+        },
+        "concentration": false,
+        "description": "Choose a portion of dirt or stone you can see within range that fits within a 5-foot cube. You can produce one of three effects:\n\nExcavate: If you target an area of loose earth, you can instantaneously excavate it, move it along the ground, and deposit it up to 5 feet away. The movement isn't forceful enough to cause damage.\n\nShape or Colour: Cause shapes, colours, or both to appear on the dirt or stone for 1 hour. You can form words, images, or patterns.\n\nAlter Terrain: If the dirt or stone is on the ground, make it Difficult Terrain, or make existing Difficult Terrain normal, for 1 hour.\n\nYou can have up to two of the spell's non-instantaneous effects active simultaneously.",
+        "scaling": {},
+        "visual_theme": "earth"
+    },
+    {
+        "id": "primal_savagery",
+        "name": "Primal Savagery",
+        "level": 0,
+        "school": "Transmutation",
+        "source": "Xanathar's Guide to Everything (2017)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": null,
+            "unit": "self"
+        },
+        "components": {
+            "verbal": false,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Channel primal magic to cause your teeth or fingernails to sharpen, ready to deliver a corrosive attack. Make a melee spell attack against one creature within 5 feet of you. On a hit, the target takes {damage} Acid damage. After the attack, your teeth or fingernails return to normal.",
+        "scaling": {
+            "damage": {
+                "1": "1d10",
+                "5": "2d10",
+                "11": "3d10",
+                "17": "4d10"
+            }
+        },
+        "visual_theme": "corrosion"
+    },
+    {
+        "id": "shape_water",
+        "name": "Shape Water",
+        "level": 0,
+        "school": "Transmutation",
+        "source": "Xanathar's Guide to Everything (2017)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 30,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": false,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "special"
+        },
+        "concentration": false,
+        "description": "Choose an area of water you can see within range that fits within a 5-foot cube. You can produce one of four effects:\n\nMove Water: Instantly move or change the flow of the water up to 5 feet in any direction. The movement isn't forceful enough to cause damage.\n\nShape Water: Cause the water to form simple shapes and animate them for 1 hour.\n\nAlter Appearance: Change the water's colour or opacity for 1 hour.\n\nFreeze Water: Freeze the water for 1 hour, provided there are no creatures in it. The ice melts when the duration expires.\n\nYou can have up to two of the spell's non-instantaneous effects active simultaneously.",
+        "scaling": {},
+        "visual_theme": "water"
+    },
+    {
+        "id": "sword_burst",
+        "name": "Sword Burst",
+        "level": 0,
+        "school": "Conjuration",
+        "source": "Tasha's Cauldron of Everything (2020)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": null,
+            "unit": "self"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": false,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Create a momentary circle of spectral blades that sweep around you. Every other creature within 5 feet of you must succeed on a Dexterity saving throw or take {damage} Force damage.",
+        "scaling": {
+            "damage": {
+                "1": "1d6",
+                "5": "2d6",
+                "11": "3d6",
+                "17": "4d6"
+            }
+        },
+        "visual_theme": "eldritch"
+    },
+    {
+        "id": "sapping_sting",
+        "name": "Sapping Sting",
+        "level": 0,
+        "school": "Necromancy",
+        "source": "Explorer's Guide to Wildemount (2020)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 30,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Sap the vitality of one creature you can see within range. The target must succeed on a Constitution saving throw or take {damage} Necrotic damage and fall Prone. On a successful save, the creature takes no damage and doesn't fall Prone.",
+        "scaling": {
+            "damage": {
+                "1": "1d4",
+                "5": "2d4",
+                "11": "3d4",
+                "17": "4d4"
+            }
+        },
+        "visual_theme": "necrotic"
+    },
+    {
+        "id": "gust_barrier",
+        "name": "Gust Barrier",
+        "level": 0,
+        "school": "Evocation",
+        "source": "Humblewood Campaign Setting (2020)",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": null,
+            "unit": "self"
+        },
+        "components": {
+            "verbal": false,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": 1,
+            "unit": "round"
+        },
+        "concentration": false,
+        "description": "Spread your arms wide and become enveloped by the surrounding air. Until the end of your next turn, any ranged attack against you is made with Disadvantage.\n\nMelee attackers who successfully hit you must make a Constitution saving throw against your spell save DC. On a failed save, the attacker is flung up to 10 feet away from you and knocked Prone.",
+        "scaling": {},
+        "visual_theme": "air"
+    },
+    {
+        "id": "cantrip",
+        "name": "Can'trip",
+        "level": 0,
+        "school": "Abjuration",
+        "source": "Heliana's Guide to Monster Hunting: Part 1",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 60,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": 1,
+            "unit": "round"
+        },
+        "concentration": false,
+        "description": "Temporarily tangle the Weave around one creature you can see within range. Until the start of your next turn, whenever the creature attempts to cast a cantrip, it must succeed on a spellcasting ability check against your spell save DC or waste its action without casting the spell.\n\nThe spell ends if the target moves outside its 60-foot range.\n\nAt character level 5, this effect also inhibits 1st-level spells. At level 11, it inhibits spells up to 2nd level. At level 17, it inhibits spells up to 3rd level.",
+        "scaling": {
+            "maximum_inhibited_spell_level": {
+                "1": 0,
+                "5": 1,
+                "11": 2,
+                "17": 3
+            }
+        },
+        "visual_theme": "arcane"
+    },
+    {
+        "id": "cant_trip",
+        "name": "Can't Trip",
+        "level": 0,
+        "school": "Abjuration",
+        "source": "Heliana's Guide to Monster Hunting: Part 2",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 30,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": 1,
+            "unit": "round"
+        },
+        "concentration": false,
+        "description": "Choose a willing creature you can see within range. Until the end of your next turn, that creature is immune to the Prone condition. If it is already Prone and isn't Restrained, the spell sets it on its feet.\n\nThe number of creatures you can simultaneously target increases to two at character level 5, three at level 11, and four at level 17.",
+        "scaling": {
+            "targets": {
+                "1": 1,
+                "5": 2,
+                "11": 3,
+                "17": 4
+            }
+        },
+        "visual_theme": "warding"
+    },
+    {
+        "id": "concussion",
+        "name": "Concussion",
+        "level": 0,
+        "school": "Evocation",
+        "source": "Heliana's Guide to Monster Hunting: Part 1",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 60,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "With a thunderous sound audible up to 100 feet away, cause a sudden increase in air pressure around one creature you can see within range. The target must succeed on a Constitution saving throw or take {damage} Thunder damage and become Deafened until the start of your next turn. On a successful save, the creature takes no damage and isn't Deafened.",
+        "scaling": {
+            "damage": {
+                "1": "1d8",
+                "5": "2d8",
+                "11": "3d8",
+                "17": "4d8"
+            }
+        },
+        "visual_theme": "storm"
+    },
+    {
+        "id": "ferocious_strike",
+        "name": "Ferocious Strike",
+        "level": 0,
+        "school": "Transmutation",
+        "source": "Heliana's Guide to Monster Hunting: Part 2",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": null,
+            "unit": "self"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "With a pulse of adrenaline, a tremendous ferocity comes upon you. Make one weapon attack against a target within your reach or range. If the attack hits, the target takes an additional {damage} damage of the weapon's damage type.",
+        "scaling": {
+            "damage": {
+                "1": "1d4",
+                "5": "2d4",
+                "11": "3d4",
+                "17": "4d4"
+            }
+        },
+        "visual_theme": "eldritch"
+    },
+    {
+        "id": "flare",
+        "name": "Flare",
+        "level": 0,
+        "school": "Evocation",
+        "source": "Heliana's Guide to Monster Hunting: Part 2",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 60,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": true,
+            "materials": "A strip of magnesium",
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Launch a pulse of radiant energy at a target within range. Make a ranged spell attack against the target. On a hit, it takes {damage} Radiant damage. On a critical hit, the target is covered in glittering mystical light, granting Advantage on attack rolls against it until the end of your next turn.\n\nAlternatively, launch the pulse at a point in the air within range, where it slowly falls towards the ground. Until the end of your next turn, the flare sheds Bright Light in a {bright_light}-foot radius and Dim Light for an additional {dim_light} feet.",
+        "scaling": {
+            "damage": {
+                "1": "1d8",
+                "5": "2d8",
+                "11": "3d8",
+                "17": "4d8"
+            },
+            "bright_light": {
+                "1": 20,
+                "5": 30,
+                "11": 40,
+                "17": 50
+            },
+            "dim_light": {
+                "1": 20,
+                "5": 30,
+                "11": 40,
+                "17": 50
+            }
+        },
+        "visual_theme": "radiance"
+    },
+    {
+        "id": "howl",
+        "name": "Howl",
+        "level": 0,
+        "school": "Transmutation",
+        "source": "Heliana's Guide to Monster Hunting: Part 2",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": null,
+            "unit": "self"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": false,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": 1,
+            "unit": "round"
+        },
+        "concentration": false,
+        "description": "Utter a bestial, magically augmented howl that can be heard for 1,000 feet. The howl can manifest as any animal call you've heard, such as the screech of a hawk or trumpet of an elephant.\n\nChoose one creature with whom you are familiar as the recipient. If it can hear your howl, it understands your meaning and can respond in a likewise manner.\n\nOther creatures that hear the howl can understand its meaning if they are affected by Comprehend Languages or similar magic, or can understand beasts. Otherwise, the howl is unintelligible to them.",
+        "scaling": {},
+        "visual_theme": "nature"
+    },
+    {
+        "id": "magnetobolt",
+        "name": "Magnetobolt",
+        "level": 0,
+        "school": "Evocation",
+        "source": "Heliana's Guide to Monster Hunting: Part 1",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 90,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "A near-invisible pulse of arcanomagnetic energy shoots towards a creature within range. Make a ranged spell attack against the target. On a hit, the target takes {damage} Force damage and must succeed on a Strength saving throw against your spell save DC or be knocked Prone.\n\nA creature made of ferrous metal or wearing ferrous armour has Disadvantage on this saving throw.",
+        "scaling": {
+            "damage": {
+                "1": "1d6",
+                "5": "2d6",
+                "11": "3d6",
+                "17": "4d6"
+            }
+        },
+        "visual_theme": "earth"
+    },
+    {
+        "id": "pins_and_needles",
+        "name": "Pins & Needles",
+        "level": 0,
+        "school": "Evocation",
+        "source": "Heliana's Guide to Monster Hunting: Part 1",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 60,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Momentarily shut down part of the nervous system of a creature you can see within range, then overstimulate it to cause crippling pain. The target must succeed on a Constitution saving throw or take {damage} Psychic damage.\n\nIf the target fails its saving throw by 5 or more, it has Disadvantage on the next attack roll it makes before the end of its next turn, as it temporarily loses full control of part of its body.",
+        "scaling": {
+            "damage": {
+                "1": "1d8",
+                "5": "2d8",
+                "11": "3d8",
+                "17": "4d8"
+            }
+        },
+        "visual_theme": "psychic"
+    },
+    {
+        "id": "primal_scent",
+        "name": "Primal Scent",
+        "level": 0,
+        "school": "Divination",
+        "source": "Heliana's Guide to Monster Hunting: Part 2",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": null,
+            "unit": "self"
+        },
+        "components": {
+            "verbal": false,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": 1,
+            "unit": "minute"
+        },
+        "concentration": true,
+        "description": "Inhale deeply, magically enhancing the scents around you. You have Advantage on the next ability check you make that relies on smell, and you can treat a d20 roll of 4 or lower as a 5.\n\nAt character level 5, whenever you make an ability check that relies on smell, you can treat a d20 roll of 7 or lower as an 8. At level 11, a roll of 10 or lower is treated as an 11. At level 17, a roll of 13 or lower is treated as a 14.",
+        "scaling": {
+            "minimum_d20_roll": {
+                "1": 5,
+                "5": 8,
+                "11": 11,
+                "17": 14
+            }
+        },
+        "visual_theme": "nature"
+    },
+    {
+        "id": "smokescreen",
+        "name": "Smokescreen",
+        "level": 0,
+        "school": "Conjuration",
+        "source": "Heliana's Guide to Monster Hunting: Part 2",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": null,
+            "unit": "self"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": true,
+            "materials": "A puffball mushroom",
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": 1,
+            "unit": "round"
+        },
+        "concentration": true,
+        "description": "Spew a thick cloud of dense black smoke that forms a cylinder centred on you, heavily obscuring its area. The cloud lasts until the start of your next turn.\n\nWhen you cast the spell, choose whether the cloud remains in its original location or moves with you, centred on you.\n\nAt character levels 1–4, the cloud is 5 feet in diameter and 10 feet high. At higher levels, you can choose its diameter and height independently, up to the maximum dimensions permitted by your level.",
+        "scaling": {
+            "maximum_diameter_feet": {
+                "1": 5,
+                "5": 15,
+                "11": 25,
+                "17": 40
+            },
+            "maximum_height_feet": {
+                "1": 10,
+                "5": 15,
+                "11": 25,
+                "17": 40
+            }
+        },
+        "visual_theme": "shadow"
+    },
+    {
+        "id": "spark",
+        "name": "Spark",
+        "level": 0,
+        "school": "Evocation",
+        "source": "Heliana's Guide to Monster Hunting: Part 2",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 60,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "A spark of bright light arcs from you to a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 Lightning damage. On a critical hit, the target is also Blinded until the end of its next turn.\n\nAt higher character levels, the spell creates additional sparks. You can direct them at the same target or different targets, making a separate attack roll for each spark.",
+        "scaling": {
+            "sparks": {
+                "1": 1,
+                "5": 2,
+                "11": 3,
+                "17": 4
+            }
+        },
+        "visual_theme": "storm"
+    },
+    {
+        "id": "spore_cloud",
+        "name": "Spore Cloud",
+        "level": 0,
+        "school": "Conjuration",
+        "source": "Heliana's Guide to Monster Hunting: Part 2",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": null,
+            "unit": "self"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": true,
+            "materials": "A toadstool",
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Produce a cloud of virulent spores. Each creature within 5 feet of you, other than yourself, must succeed on a Constitution saving throw or take {damage} Poison damage.\n\nA creature that fails the saving throw by 5 or more is Poisoned until the end of its next turn.",
+        "scaling": {
+            "damage": {
+                "1": "1d4",
+                "5": "2d4",
+                "11": "3d4",
+                "17": "4d4"
+            }
+        },
+        "visual_theme": "corrosion"
+    },
+    {
+        "id": "stalkers_eye",
+        "name": "Stalker's Eye",
+        "level": 0,
+        "school": "Enchantment",
+        "source": "Heliana's Guide to Monster Hunting: Part 2",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": null,
+            "unit": "touch"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": true,
+            "materials": "Small magnifying lens",
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": 1,
+            "unit": "minute"
+        },
+        "concentration": true,
+        "description": "A willing creature you touch gains a preternatural ability to perceive weaknesses in a creature's defences. The first time it makes an attack while under the effect of this spell, it makes that attack with Advantage. After the attack, the spell ends.\n\nAt higher character levels, the augmented attack gains an expanded critical-hit range.",
+        "scaling": {
+            "critical_hit_minimum": {
+                "1": 20,
+                "5": 19,
+                "11": 18,
+                "17": 17
+            }
+        },
+        "visual_theme": "illusion"
+    },
+    {
+        "id": "swarm",
+        "name": "Swarm",
+        "level": 0,
+        "school": "Conjuration",
+        "source": "Heliana's Guide to Monster Hunting: Part 1",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 90,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": true,
+            "materials": "A spider sac",
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": 1,
+            "unit": "round"
+        },
+        "concentration": false,
+        "description": "Choose a target within range. A cloud of minuscule poisonous spiders floats towards it on gossamer strands. The target must succeed on a Dexterity saving throw or become Poisoned until the end of its next turn.\n\nStarting at character level 5, the target also takes {damage} Poison damage on a failed saving throw.",
+        "scaling": {
+            "damage": {
+                "1": null,
+                "5": "1d10",
+                "11": "2d10",
+                "17": "3d10"
+            }
+        },
+        "visual_theme": "corrosion"
+    },
+    {
+        "id": "water_whip",
+        "name": "Water Whip",
+        "level": 0,
+        "school": "Transmutation",
+        "source": "Heliana's Guide to Monster Hunting: Part 1",
+        "ritual": false,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 60,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Choose a source of water you can see within range containing at least 4 pints. Make a melee spell attack against a creature within 30 feet of the water source. On a hit, the target takes {damage} Slashing damage.\n\nIf the target is Large or smaller, you can force it to make a Strength saving throw. On a failure, it is pulled up to {pull_distance} feet towards the water source.",
+        "scaling": {
+            "damage": {
+                "1": "1d6",
+                "5": "2d6",
+                "11": "3d6",
+                "17": "4d6"
+            },
+            "pull_distance": {
+                "1": 10,
+                "5": 15,
+                "11": 20,
+                "17": 25
+            }
+        },
+        "visual_theme": "water"
+    },
+    {
+        "id": "alarm",
+        "name": "Alarm",
+        "level": 1,
+        "school": "Abjuration",
+        "source": "Player's Handbook (2024)",
+        "ritual": true,
+        "casting_time": {
+            "amount": 1,
+            "unit": "minute"
+        },
+        "range": {
+            "amount": 30,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": true,
+            "materials": "A bell and silver wire",
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": 8,
+            "unit": "hours"
+        },
+        "concentration": false,
+        "description": "Ward a door, window, or area no larger than a 20-foot Cube within range. Until the spell ends, an alarm alerts you whenever a creature touches or enters the warded area. When casting the spell, you can designate creatures that won't trigger the alarm and choose whether the alarm is audible or mental.\n\nA mental alarm alerts you with a ping in your mind if you're within 1 mile of the warded area, waking you if you're asleep. An audible alarm produces the sound of a handbell for 10 seconds within 60 feet of the warded area.",
+        "scaling": {},
+        "visual_theme": "warding"
+    },
+    {
+        "id": "detect_magic",
+        "name": "Detect Magic",
+        "level": 1,
+        "school": "Divination",
+        "source": "Player's Handbook (2024)",
+        "ritual": true,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": null,
+            "unit": "self"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": 10,
+            "unit": "minutes"
+        },
+        "concentration": true,
+        "description": "For the duration, you sense the presence of magical effects within 30 feet of yourself.\n\nExamining Auras: If you sense magical effects, you can take a Magic action to see a faint aura around any visible creature or object in the area that bears the magic. If an effect was created by a spell, you also learn that spell's school of magic.\n\nBarriers: The spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead.",
+        "scaling": {},
+        "visual_theme": "arcane"
+    },
+    {
+        "id": "detect_poison_and_disease",
+        "name": "Detect Poison and Disease",
+        "level": 1,
+        "school": "Divination",
+        "source": "Player's Handbook (2024)",
+        "ritual": true,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": null,
+            "unit": "self"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": true,
+            "materials": "A yew leaf",
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": 10,
+            "unit": "minutes"
+        },
+        "concentration": true,
+        "description": "For the duration, you sense the location of poisons, poisonous or venomous creatures, and magical contagions within 30 feet of yourself. You can identify the kind of poison, creature, or contagion detected.\n\nBarriers: The spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead.",
+        "scaling": {},
+        "visual_theme": "corrosion"
+    },
+    {
+        "id": "identify",
+        "name": "Identify",
+        "level": 1,
+        "school": "Divination",
+        "source": "Player's Handbook (2024)",
+        "ritual": true,
+        "casting_time": {
+            "amount": 1,
+            "unit": "minute"
+        },
+        "range": {
+            "amount": null,
+            "unit": "touch"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": true,
+            "materials": "A pearl worth 100 GP",
+            "material_cost_gp": 100,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Touch an object throughout the spell's casting. If the object is a magic item or another magic-imbued object, you learn its properties and how to use them, whether it requires Attunement, and how many charges it has, if any. You also learn whether any spells are affecting the object and what they are.\n\nAlternatively, you can touch a creature throughout the casting and learn which spells, if any, are currently affecting it.",
+        "scaling": {},
+        "visual_theme": "runes"
+    },
+    {
+        "id": "illusory_script",
+        "name": "Illusory Script",
+        "level": 1,
+        "school": "Illusion",
+        "source": "Player's Handbook (2024)",
+        "ritual": true,
+        "casting_time": {
+            "amount": 1,
+            "unit": "minute"
+        },
+        "range": {
+            "amount": null,
+            "unit": "touch"
+        },
+        "components": {
+            "verbal": false,
+            "somatic": true,
+            "material": true,
+            "materials": "Ink worth 10 GP, which the spell consumes",
+            "material_cost_gp": 10,
+            "material_consumed": true
+        },
+        "duration": {
+            "amount": 10,
+            "unit": "days"
+        },
+        "concentration": false,
+        "description": "Write a message on parchment, paper, or another suitable material, imbuing the writing with an illusion lasting 10 days.\n\nDesignated Readers: You and any creatures you designate when casting the spell see the writing normally, in your handwriting, with the meaning you intended.\n\nOther Readers: To everyone else, the writing appears to be an unintelligible unknown or magical script. Alternatively, you can make the writing appear to contain a different message, changing its meaning, handwriting, and language. Any language used must be one you know.\n\nTruesight: A creature with Truesight can read the concealed message, regardless of whether you designated it as a reader.\n\nDispelled: If the spell is dispelled, both the original writing and its illusion disappear.",
+        "scaling": {},
+        "visual_theme": "illusion"
+    },
+    {
+        "id": "purify_food_and_drink",
+        "name": "Purify Food and Drink",
+        "level": 1,
+        "school": "Transmutation",
+        "source": "Player's Handbook (2024)",
+        "ritual": true,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 10,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": false,
+            "materials": null,
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "You remove poison and rot from nonmagical food and drink in a 5-foot-radius Sphere centred on a point within range.",
+        "scaling": {},
+        "visual_theme": "spirit"
+    },
+    {
+        "id": "tensers_floating_disk",
+        "name": "Tenser's Floating Disk",
+        "level": 1,
+        "school": "Conjuration",
+        "source": "Player's Handbook (2024)",
+        "ritual": true,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 30,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": true,
+            "materials": "A drop of mercury",
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": 1,
+            "unit": "hour"
+        },
+        "concentration": false,
+        "description": "Create a circular, horizontal plane of force 3 feet in diameter and 1 inch thick, floating 3 feet above the ground in an unoccupied space within range.\n\nCarrying Capacity: The disk can hold up to 500 pounds. If more weight is placed on it, the spell ends, causing anything on the disk to fall.\n\nFollowing You: The disk remains stationary while you are within 20 feet of it. If you move farther away, it follows you, remaining 20 feet from you. If you move more than 100 feet away, the spell ends.\n\nMovement Restrictions: The disk can move across uneven terrain, stairs, and slopes, but cannot cross an elevation change of 10 feet or more.",
+        "scaling": {},
+        "visual_theme": "eldritch"
+    },
+    {
+        "id": "unseen_servant",
+        "name": "Unseen Servant",
+        "level": 1,
+        "school": "Conjuration",
+        "source": "Player's Handbook (2024)",
+        "ritual": true,
+        "casting_time": {
+            "amount": 1,
+            "unit": "action"
+        },
+        "range": {
+            "amount": 60,
+            "unit": "feet"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": true,
+            "materials": "A bit of string and wood",
+            "material_cost_gp": null,
+            "material_consumed": false
+        },
+        "duration": {
+            "amount": 1,
+            "unit": "hour"
+        },
+        "concentration": false,
+        "description": "Create an Invisible, mindless, shapeless, Medium force in an unoccupied space on the ground within range. It performs simple tasks at your command for the duration.\n\nStatistics: The servant has AC 10, 1 Hit Point, and a Strength score of 2. It cannot attack. If reduced to 0 Hit Points, the spell ends.\n\nCommands: Once on each of your turns, you can use a Bonus Action to mentally command the servant to move up to 15 feet and interact with an object. It can perform simple tasks that a human could do, such as fetching objects, cleaning, mending, folding clothes, lighting fires, serving food, or pouring drinks.\n\nCompleting Tasks: Once commanded, the servant carries out its task to the best of its ability. When finished, it waits for your next command.\n\nDistance Limit: If you command the servant to perform a task that would take it more than 60 feet away from you, the spell ends.",
+        "scaling": {},
+        "visual_theme": "spirit"
+    },
+    {
+        "id": "ceremony",
+        "name": "Ceremony",
+        "level": 1,
+        "school": "Abjuration",
+        "source": "Xanathar's Guide to Everything (2017)",
+        "ritual": true,
+        "casting_time": {
+            "amount": 1,
+            "unit": "hour"
+        },
+        "range": {
+            "amount": null,
+            "unit": "touch"
+        },
+        "components": {
+            "verbal": true,
+            "somatic": true,
+            "material": true,
+            "materials": "Powdered silver worth 25 GP, which the spell consumes",
+            "material_cost_gp": 25,
+            "material_consumed": true
+        },
+        "duration": {
+            "amount": null,
+            "unit": "instantaneous"
+        },
+        "concentration": false,
+        "description": "Perform a magical religious ceremony, choosing one of the six rites below. The target must remain within 10 feet of you throughout the casting.\n\nAtonement: Touch a willing creature whose alignment has changed. Make a DC 20 Wisdom (Insight) check. On a success, restore its original alignment.\n\nBless Water: Touch one vial of water, transforming it into holy water.\n\nComing of Age: Touch a young adult humanoid. For 24 hours, it can add 1d4 to its ability checks. A creature can benefit from this rite only once.\n\nDedication: Touch a humanoid wishing to dedicate itself to your god's service. For 24 hours, it can add 1d4 to its saving throws. A creature can benefit from this rite only once.\n\nFuneral Rite: Touch a corpse. For 7 days, it cannot become undead except through a Wish spell.\n\nWedding: Touch adult humanoids willingly entering marriage. For 7 days, each gains +2 AC while within 30 feet of the other. A creature can benefit from this rite again only if widowed.",
+        "scaling": {},
+        "visual_theme": "runes"
+    }
+]
