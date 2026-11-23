@@ -1,5 +1,5 @@
 
-const cache_name = "the_patron_v2";
+const cache_name = "the_patron_v3";
 
 const core_files = [
     "./",
@@ -25,6 +25,7 @@ const core_files = [
     "./js/binding_sigil.js",
     "./js/config.js",
     "./js/consultation.js",
+    "./js/consultation_storage.js",
     "./js/data_loading.js",
     "./js/dom.js",
     "./js/events.js",
