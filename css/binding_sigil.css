@@ -1,0 +1,85 @@
+#binding_sigil {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    pointer-events: none;
+    z-index: 5;
+}
+
+#binding_sigil[hidden] {
+    display: none;
+}
+
+#binding_sigil {
+    transition: opacity 0.3s ease-in;
+}
+
+#binding_sigil.is_disappearing {
+    opacity: 0;
+}
+
+@keyframes binding_rotate_clockwise {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes binding_rotate_anticlockwise {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+#binding_outer_ring,
+#binding_middle_ring {
+    transform-box: view-box;
+    transform-origin: 100px 100px;
+}
+
+@keyframes binding_materialise {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#binding_outer_ring {
+    opacity: 0;
+    animation:
+        binding_rotate_clockwise 40s linear infinite,
+        binding_materialise 2s ease-out forwards;
+}
+
+#binding_middle_ring {
+    opacity: 0;
+    animation:
+        binding_rotate_anticlockwise 25s linear infinite,
+        binding_materialise 2s ease-out 1s forwards;
+}
+
+#binding_centre {
+    opacity: 0;
+    animation: binding_materialise 2s ease-out 2s forwards;
+}
+
+#binding_outer_ring,
+#binding_middle_ring {
+    filter: url(#binding_glow);
+}
+
+#binding_centre {
+    filter: url(#binding_centre_glow);
+}
+    

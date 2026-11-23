@@ -1,0 +1,155 @@
+.spell_card {
+    --spell_colour: #8BDEFF;
+    --patron_colour: #B579FF;
+
+    position: relative;
+    width: min(120px, calc((100% - 24px) / 3));
+    flex-shrink: 0;
+    aspect-ratio: 2 / 3;
+    container-type: inline-size;
+    perspective: 800px;
+}
+
+.spell_artwork {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.spell_details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding: 0 5cqw 12cqw;
+    box-sizing: border-box;
+
+    background: linear-gradient(to bottom,
+            transparent,
+            rgba(0, 0, 0, 0.65));
+}
+
+.spell_name {
+    font-family: Georgia, serif;
+    font-size: 10cqw;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.3cqw;
+    line-height: 1.2;
+
+    color: var(--spell_colour);
+    text-shadow: 0 0 8px var(--spell_colour),
+        0 1px 3px #000000;
+    max-width: 100%;
+}
+
+.spell_decoration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5cqw;
+    width: 80%;
+    margin-top: 5cqw;
+    height: 5cqw;
+}
+
+.decoration_line {
+    flex: 1;
+    height: 1px;
+
+    background: linear-gradient(to right,
+            transparent,
+            var(--spell_colour));
+}
+
+.decoration_line:last-child {
+    transform: rotate(180deg);
+}
+
+.spell_diamonds {
+    display: flex;
+    align-items: center;
+    gap: 2.5cqw;
+}
+
+.spell_diamonds:empty {
+    display: none;
+}
+
+.spell_decoration:has(.spell_diamonds:empty) {
+    gap: 0;
+}
+
+.spell_diamond {
+    width: 3cqw;
+    height: 3cqw;
+    border: 1px solid var(--spell_colour);
+    transform: rotate(45deg);
+}
+
+.card_inner {
+    position: absolute;
+    inset: 0;
+    transform-style: preserve-3d;
+
+    transition: transform 0.6s ease-in-out;
+}
+
+.card_face {
+    position: absolute;
+    inset: 0;
+    border-radius: 6px;
+    overflow: hidden;
+    backface-visibility: hidden;
+
+    border: 1px solid var(--face_colour);
+
+    box-shadow:
+        0 0 8px color-mix(in srgb,
+            var(--face_colour) 40%,
+            transparent);
+}
+
+.card_front {
+    --face_colour: var(--spell_colour);
+}
+
+.card_back {
+    --face_colour: var(--patron_colour);
+    transform: rotateY(180deg);
+}
+
+.spell_card.is_hidden .card_inner {
+    transform: rotateY(180deg);
+}
+
+.spell_row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    height: 100%;
+}
+
+.cantrip_section .spell_row {
+    transform: translateY(10px);
+}
+
+.ritual_section .spell_row {
+    transform: translateY(-10px);
+}
+
+.cantrip_section .spell_card:nth-child(2) {
+    transform: translateY(-18px);
+}

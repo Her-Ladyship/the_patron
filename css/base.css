@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100dvh;
+    background: #08060b;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: 'Cinzel';
+    src: url('../assets/fonts/Cinzel-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400 900;
+    font-display: swap;
+}
+
+.patron_screen {
+    width: 100%;
+    max-width: 430px;
+    height: 100%;
+    display: grid;
+    grid-template-rows:
+        10% 25% 20% 25% 20%;
+    padding: 12px;
+    position: relative;
+    z-index: 1;
+}
+
+.layout_section {
+    min-height: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #96839f;
+
+    font-family: Georgia, serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.patron_screen {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+
+input,
+textarea {
+    -webkit-user-select: text;
+    user-select: text;
+    -webkit-touch-callout: default;
+}

@@ -1,0 +1,276 @@
+.skull {
+    --aspect_colour: #70E9F4;
+    --brand_colour: #286F80;
+    --energy_colour: #8AF0FF;
+    --core_colour: #E0FCFF;
+    position: relative;
+    width: 33.333%;
+    flex-shrink: 0;
+    animation: skull_float 4s ease-in-out infinite;
+    scale: 0.80;
+}
+
+.skull_group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 390px;
+}
+
+.skull_group.anticipating .skull {
+    animation-name: skull_float, skull_wiggle;
+    animation-duration: 4s, 0.22s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.skull_group.anticipating .skull:nth-child(2) {
+    animation-duration: 4.6s, 0.22s;
+    animation-delay: -1.8s, -0.05s;
+}
+
+.skull_group.anticipating .skull:nth-child(3) {
+    animation-duration: 3.8s, 0.22s;
+    animation-delay: -2.7s, -0.12s;
+}
+
+@keyframes skull_wiggle {
+
+    0%,
+    100% {
+        rotate: -5deg;
+    }
+
+    50% {
+        rotate: 5deg;
+    }
+}
+
+.skull_group.consulting .skull {
+    animation: none;
+    will-change: transform;
+}
+
+.skull_group.consulting .sigil,
+.skull_group.consulting .eye_ember {
+    opacity: 0;
+}
+
+.skull_group.consulting .eye_ember {
+    animation: none;
+}
+
+.sigil,
+.eye_ember {
+    transition: opacity 0.15s ease-out;
+}
+
+.skull:nth-child(1) {
+    animation-duration: 4s;
+}
+
+.skull:nth-child(2) {
+    animation-duration: 4.6s;
+    animation-delay: -1.8s;
+}
+
+.skull:nth-child(3) {
+    animation-duration: 3.8s;
+    animation-delay: -2.7s;
+}
+
+@keyframes skull_float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15%);
+    }
+}
+
+.base_skull {
+    display: block;
+    width: 100%;
+}
+
+.sigil {
+    position: absolute;
+    width: 28%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sigil_brand {
+    mix-blend-mode: multiply;
+    opacity: 0.9;
+}
+
+@keyframes sigil_pulse {
+
+    0%,
+    100% {
+        opacity: 0.85;
+        filter: drop-shadow(0 0 3px var(--aspect_colour));
+    }
+
+    50% {
+        opacity: 1;
+        filter: drop-shadow(0 0 6px var(--aspect_colour));
+    }
+}
+
+.sigil_energy {
+    filter: drop-shadow(0 0 4px var(--aspect_colour));
+    opacity: 0.9;
+    animation: sigil_pulse 5s ease-in-out infinite;
+}
+
+.eye_ember {
+    position: absolute;
+    top: 58%;
+    width: 15%;
+    aspect-ratio: 1;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+
+    background: radial-gradient(circle,
+            var(--core_colour) 0%,
+            var(--energy_colour) 8%,
+            var(--aspect_colour) 18%,
+            color-mix(in srgb, var(--aspect_colour) 40%, transparent) 35%,
+            color-mix(in srgb, var(--aspect_colour) 10%, transparent) 60%,
+            transparent 75%);
+
+    pointer-events: none;
+}
+
+@keyframes ember_flicker {
+
+    0%,
+    100% {
+        opacity: 0.95;
+    }
+
+    15% {
+        opacity: 0.75;
+    }
+
+    28% {
+        opacity: 1;
+    }
+
+    43% {
+        opacity: 0.85;
+    }
+
+    57% {
+        opacity: 0.95;
+    }
+
+    71% {
+        opacity: 0.7;
+    }
+
+    82% {
+        opacity: 0.9;
+    }
+}
+
+.eye_left {
+    left: 36%;
+    animation: ember_flicker 3.7s ease-in-out infinite;
+}
+
+.eye_right {
+    left: 64%;
+    animation: ember_flicker 4.3s ease-in-out infinite;
+    animation-delay: -1.6s;
+}
+
+.skull_stage {
+    position: relative;
+    width: 100%;
+    max-width: 390px;
+}
+
+.magic_eruption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 130%;
+    height: 150%;
+    transform: translate(-50%, -50%) scale(0.4);
+
+    background: radial-gradient(ellipse,
+            #ffffff 0%,
+            #fff0ff 20%,
+            #d9a0ff 40%,
+            rgba(140, 50, 200, 0.6) 60%,
+            transparent 75%);
+
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.magic_eruption.active {
+    animation: eruption 0.65s ease-out forwards;
+}
+
+@keyframes eruption {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.4);
+    }
+
+    15% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    30% {
+        opacity: 0.9;
+        transform: translate(-50%, -50%) scale(1.15);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1.4);
+    }
+}
+
+.aspect_labels {
+    display: flex;
+    width: 100%;
+    margin-top: -10px;
+}
+
+.aspect_label {
+    width: 33.333%;
+    text-align: center;
+
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    color: var(--aspect_colour);
+    text-shadow: 0 0 8px var(--aspect_colour);
+
+    opacity: 1;
+    transition: opacity 0.15s ease-out;
+}
+
+.skull_group.consulting+.aspect_labels {
+    opacity: 0;
+}
+
+.aspect_labels {
+    transition: opacity 0.15s ease-out;
+}
+

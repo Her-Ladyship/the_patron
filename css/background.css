@@ -1,0 +1,82 @@
+.abyss {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    background: #08060b;
+    z-index: 0;
+}
+
+.abyss_atmosphere {
+    position: absolute;
+    inset: -30%;
+
+    background:
+        radial-gradient(ellipse at 25% 30%,
+            rgba(65, 20, 100, 0.25),
+            transparent 45%),
+        radial-gradient(ellipse at 75% 65%,
+            rgba(85, 15, 40, 0.20),
+            transparent 40%),
+        radial-gradient(ellipse at 40% 85%,
+            rgba(45, 15, 80, 0.25),
+            transparent 45%);
+
+    animation: abyss_drift 40s ease-in-out infinite alternate;
+}
+
+@keyframes abyss_drift {
+    from {
+        transform: translate(-5%, -3%) rotate(-8deg);
+    }
+
+    to {
+        transform: translate(5%, 3%) rotate(8deg);
+    }
+}
+
+.abyss_particles {
+    position: absolute;
+    inset: 0;
+}
+
+.abyss_mote {
+    position: absolute;
+
+    width: var(--mote_size);
+    height: var(--mote_size);
+
+    border-radius: 50%;
+    background: var(--mote_colour);
+
+    box-shadow: 0 0 6px var(--mote_colour);
+
+    animation:
+        mote_twinkle var(--twinkle_duration) ease-in-out infinite,
+        mote_drift var(--drift_duration) ease-in-out infinite alternate;
+
+    animation-delay: var(--mote_delay);
+}
+
+@keyframes mote_twinkle {
+
+    0%,
+    100% {
+        opacity: 0.05;
+    }
+
+    50% {
+        opacity: var(--mote_brightness);
+    }
+}
+
+@keyframes mote_drift {
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(var(--drift_x), var(--drift_y));
+    }
+}
+

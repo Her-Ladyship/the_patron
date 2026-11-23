@@ -1,0 +1,76 @@
+.spell_overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.78);
+}
+
+.spell_overlay[hidden] {
+    display: none;
+}
+
+.spell_banner {
+    --spell_colour: #B579FF;
+
+    width: 100%;
+    max-width: 430px;
+    height: 50dvh;
+
+    background: rgba(18, 12, 25, 0.96);
+
+    border-top: 1px solid var(--spell_colour);
+    border-bottom: 1px solid var(--spell_colour);
+
+    box-shadow:
+        0 0 25px color-mix(in srgb,
+            var(--spell_colour) 25%,
+            transparent);
+
+    overflow: hidden;
+}
+
+.spell_banner_content {
+    width: 100%;
+    height: 100%;
+
+    padding: 24px;
+
+    overflow-y: auto;
+    overscroll-behavior: contain;
+
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+
+    color: #E8DFFF;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.spell_banner_stats {
+    margin: 20px 0;
+    padding: 14px 0;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.spell_banner_stat {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+.spell_banner_stat strong {
+    color: var(--spell_colour, #B579FF);
+    font-weight: normal;
+}
+
+.spell_banner_description {
+    margin-top: 20px;
+}
+

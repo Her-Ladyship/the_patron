@@ -1,0 +1,90 @@
+.consultation_button {
+    position: relative;
+
+    width: 200px;
+    aspect-ratio: 1;
+
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+
+    cursor: pointer;
+    touch-action: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.eclipse_corona {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+
+    background: radial-gradient(circle,
+            #08060b 0%,
+            #08060b 44%,
+            #C18AFF 49%,
+            #8235D4 53%,
+            rgba(100, 30, 180, 0.4) 60%,
+            transparent 70%);
+
+    animation: corona_breathe 5s ease-in-out infinite;
+}
+
+.eclipse_core {
+    position: absolute;
+    inset: 26%;
+    border-radius: 50%;
+    background: #08060b;
+}
+
+@keyframes corona_breathe {
+
+    0%,
+    100% {
+        opacity: 0.65;
+        scale: 0.96;
+    }
+
+    50% {
+        opacity: 1;
+        scale: 1.04;
+    }
+}
+
+.eclipse_charge {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+
+    transform: rotate(-90deg);
+    pointer-events: none;
+}
+
+.charge_ring {
+    fill: none;
+    stroke: #E8CFFF;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+
+    filter: drop-shadow(0 0 3px #B579FF) drop-shadow(0 0 6px #B579FF);
+}
+
+.consultation_button.charging .charge_ring {
+    animation: charge_eclipse 2s linear forwards;
+}
+
+@keyframes charge_eclipse {
+    from {
+        stroke-dashoffset: 100;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+

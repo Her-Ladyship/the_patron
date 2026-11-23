@@ -1,0 +1,109 @@
+.patron_header {
+    --spell_colour: #B579FF;
+}
+
+.header_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+}
+
+.patron_title {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #D6B7ED;
+    text-shadow: 0 0 12px rgba(181, 121, 255, 0.3);
+}
+
+.header_decoration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 80%;
+}
+
+.header_diamond {
+    width: 7px;
+    height: 7px;
+    border: 1px solid var(--spell_colour);
+    transform: rotate(45deg);
+}
+
+.consultation_section {
+    position: relative;
+    scale: 0.95;
+}
+
+.settings_button {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+
+    width: 44px;
+    height: 44px;
+    padding: 3px;
+
+    border: none;
+    background: transparent;
+    color: #BFA0DF;
+
+    opacity: 0.8;
+    cursor: pointer;
+
+    -webkit-tap-highlight-color: transparent;
+
+    transition: opacity 0.2s ease,
+        filter 0.2s ease;
+}
+
+.library_button {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+
+    width: 44px;
+    height: 44px;
+    padding: 3px;
+
+    border: none;
+    background: transparent;
+    color: #BFA0DF;
+
+    opacity: 0.8;
+    cursor: pointer;
+
+    -webkit-tap-highlight-color: transparent;
+
+    transition: opacity 0.2s ease,
+        filter 0.2s ease;
+}
+
+.library_button svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.library_button:active {
+    opacity: 1;
+    filter: drop-shadow(0 0 5px #B579FF);
+}
+
+.settings_button svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.settings_button:active {
+    opacity: 1;
+    filter: drop-shadow(0 0 5px #B579FF);
+}
+
