@@ -1,5 +1,5 @@
 
-const cache_name = "the_patron_v3";
+const cache_name = "the_patron_v4";
 
 const core_files = [
     "./",
@@ -92,6 +92,22 @@ self.addEventListener("activate", (event) => {
 
 self.addEventListener("fetch", (event) => {
     if (event.request.method !== "GET") {
+        return;
+    }
+
+    if (event.request.mode === "navigate") {
+        event.respondWith(
+            (async () => {
+                const cached_page = await caches.match("./index.html");
+
+                if (cached_page) {
+                    return cached_page;
+                }
+
+                return fetch(event.request);
+            })()
+        );
+
         return;
     }
 
