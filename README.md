@@ -17,7 +17,7 @@ The app uses HTML, CSS, vanilla JavaScript ES modules and JSON, with static host
 
 - **Data-driven selections.** [`spells.json`](spells.json) and [`aspects.json`](aspects.json) define the library and the patron’s aspects. [`consultation.js`](js/consultation.js) filters the eligible spell pools before drawing without replacement.
 - **Reversible overrides.** [`consultation_storage.js`](js/consultation_storage.js) stores aspect IDs, the original spell IDs and any override IDs in `localStorage`. On launch it resolves those IDs against the current data and validates the result before restoring it.
-- **Offline caching.** [`service_worker.js`](service_worker.js) preloads the app shell, JSON data and artwork derived from spell IDs. It serves cached responses first, falls back to the network on a miss and removes older Patron caches on activation. The current precache list omits `js/consultation_storage.js`, so a fully offline launch can fail if that module is unavailable.
+- **Offline caching.** [`service_worker.js`](service_worker.js) preloads the app shell, JSON data and artwork derived from spell IDs. It serves cached responses first, falls back to the network on a miss and removes older Patron caches on activation.
 - **iPhone deployment.** The Home Screen icon uses a relative `apple-touch-icon` URL so it resolves under the GitHub Pages project path. The URL includes a version parameter, and the corrected icon was checked in a fresh Home Screen install.
 
 ## Run locally
